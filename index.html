@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ігри на сайті</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Прості ігри</h1>
+    </header>
+
+    <div class="game-container">
+        <section class="game">
+            <h2>Камінь, ножиці, папір</h2>
+            <div class="choices">
+                <button class="choice" onclick="playRockPaperScissors('rock')">Камінь</button>
+                <button class="choice" onclick="playRockPaperScissors('paper')">Папір</button>
+                <button class="choice" onclick="playRockPaperScissors('scissors')">Ножиці</button>
+            </div>
+            <p id="result"></p>
+        </section>
+
+        <section class="game">
+            <h2>Вгадай число</h2>
+            <p>Вгадай число від 1 до 100!</p>
+            <input type="number" id="guess" placeholder="Введіть число" />
+            <button onclick="guessNumber()">Вгадати</button>
+            <p id="number-result"></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Ігри на сайті</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
